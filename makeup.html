@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makeup Page</title>
+    <!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
 </head>
 <style>
 :root{
@@ -16,7 +20,25 @@
   --input-border: #ccc;
   --stars: #ffd700;
 }
-
+.dark-mode {
+  --bg: #1a1a1a;
+  --card: #2a2a2a;
+  --pink: #ff6b9d;
+  --text: #e0e0e0;
+  --shadow: rgba(0,0,0,0.3);
+  --footer-bg: linear-gradient(135deg,#8e0038,#6a0040);
+  --input-border: #555;
+  --stars: #ffd700;
+}
+#theme-toggle {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+#theme-toggle:hover { color: var(--pink); }
 
 
 
@@ -131,7 +153,7 @@ footer{
     <a href="makeup.html" style="color: #b52a5a;">Makeup</a>
     <a href="testimonial.html">Testimonials</a>
     <a href="contact.html">Contact</a>
-  
+  <button id="theme-toggle"><i class="fas fa-moon"></i></button>
   </nav>
 </header>
 <section id="makeup">
