@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Page</title>
+</head>
+
+
+
+<style>
+:root{
+  --bg:#fff5f8;
+  --card:#ffffff;
+  --pink:#d6336c;
+  --text:#333;
+  --shadow: rgba(0,0,0,0.1);
+  --footer-bg: linear-gradient(135deg,#c2185b,#ad1457);
+  --input-border: #ccc;
+  --stars: #ffd700;
+}
+
+
+
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Poppins;
+  background:var(--bg);
+  color:var(--text);
+  scroll-behavior:smooth;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* HEADER */
+header{
+  padding:18px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  background:var(--bg);
+  box-shadow:0 2px 10px var(--shadow);
+  z-index:10;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+header h2{color:var(--pink)}
+nav a{
+  margin:0 12px;
+  text-decoration:none;
+  color:var(--text);
+  font-weight:500;
+  transition: color 0.3s;
+}
+
+
+section{padding:80px 40px}
+
+
+
+  
+/* TESTIMONIALS */
+.testimonials{text-align:center}
+.testimonial{
+  background:var(--card);
+  padding:20px;
+  border-radius:15px;
+  max-width:400px;
+  margin:20px auto;
+  box-shadow:0 5px 15px var(--shadow);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.stars{color:var(--stars)}
+
+
+
+/* FOOTER */
+footer{
+  background:var(--footer-bg);
+  color:#fff;
+  padding:25px;
+  border-radius:25px 25px 0 0;
+  transition: background 0.3s;
+}
+.footer-content{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.newsletter input{
+  padding:8px;
+  border-radius:5px;
+  border:none;
+  background: var(--card);
+  color: var(--text);
+}
+.newsletter button{
+  padding:8px 15px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  background: var(--pink);
+  color: #fff;
+  transition: background 0.3s;
+}
+.newsletter button:hover { background: #b52a5a; }
+</style>
+<body>
+    <header>
+  <h2><i class="fas fa-heart"></i> Blush & Bloom</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="skin.html">Skincare</a>
+    <a href="makeup.html">Makeup</a>
+    <a href="testimorial.html" style="color: #b52a5a;">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  
+  </nav>
+</header>
+<section id="testimonials" class="testimonials">
+<h2 style="color:var(--pink)">
+ Testimonials
+</h2>
+<div class="testimonial">
+  <p>"Amazing skincare tips — my skin is glowing!"</p>
+  <div class="stars">★★★★★</div>
+</div>
+</section>
+
+    <footer>
+<div class="footer-content">
+  <p>© 2025 Blush & Bloom</p>
+ 
+  <form class="newsletter">
+    <input type="email" placeholder="Subscribe">
+    <button>Subscribe</button>
+  </form>
+</div>
+</footer>
+
+</body>
+</html>
